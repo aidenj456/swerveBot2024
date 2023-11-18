@@ -28,7 +28,12 @@ public final class CTREConfigs {
         swerveAngleFXConfig.slot0.kI = Constants.Swerve.angleKI;
         swerveAngleFXConfig.slot0.kD = Constants.Swerve.angleKD;
         swerveAngleFXConfig.slot0.kF = Constants.Swerve.angleKF;
+        swerveAngleFXConfig.nominalOutputForward = 0.0;
+        swerveAngleFXConfig.nominalOutputReverse = 0.0;
+        swerveAngleFXConfig.peakOutputForward = 1.0;
+        swerveAngleFXConfig.peakOutputReverse = -1.0;
         swerveAngleFXConfig.supplyCurrLimit = angleSupplyLimit;
+        swerveAngleFXConfig.neutralDeadband = 0.05;
 
         /* Swerve Drive Motor Configuration */
         SupplyCurrentLimitConfiguration driveSupplyLimit = new SupplyCurrentLimitConfiguration(
