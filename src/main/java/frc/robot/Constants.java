@@ -14,7 +14,7 @@ import frc.lib.util.SwerveModuleConstants;
 import frc.lib.math.Conversions;
 
 public final class Constants {
-    public static final double stickDeadband = 0.05;
+    public static final double stickDeadband = 0.4;
 
     public static final class Swerve {
         public static final int pigeonID = 0;
@@ -98,7 +98,7 @@ public final class Constants {
             public static final int angleMotorID = 2;
             public static final int canCoderID = 12;
             public static final Rotation2d angleOffset = Rotation2d.fromDegrees(178.418);
-            public static final boolean driveMotorInvert = false;
+            public static final boolean driveMotorInvert = true;
             public static final TalonFXInvertType angleMotorInvert = TalonFXInvertType.Clockwise;            
             public static final SwerveModuleConstants constants = 
                 new SwerveModuleConstants(driveMotorID, angleMotorID, canCoderID, angleOffset, driveMotorInvert, angleMotorInvert);
@@ -134,7 +134,7 @@ public final class Constants {
             public static final int angleMotorID = 1;
             public static final int canCoderID = 15;
             public static final Rotation2d angleOffset = Rotation2d.fromDegrees(358.154);
-            public static final boolean driveMotorInvert = true;
+            public static final boolean driveMotorInvert = false;
             public static final TalonFXInvertType angleMotorInvert = TalonFXInvertType.Clockwise;    
             public static final SwerveModuleConstants constants = 
                 new SwerveModuleConstants(driveMotorID, angleMotorID, canCoderID, angleOffset, driveMotorInvert, angleMotorInvert);
